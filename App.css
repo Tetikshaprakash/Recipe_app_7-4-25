@@ -1,0 +1,314 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.bg{
+  bottom: 300px;
+  filter: brightness(0.5);
+}
+
+.content{
+  position: relative;
+  z-index: 2;
+  top: 10px;
+  bottom: 400px;
+  left: 350px;
+  font-size: 30px;
+  color: #fefbfb;
+  width: 800px;
+  height:300px;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Set the body to remove default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: green;
+}
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  margin: 100px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style for the heading */
+.container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style for input fields */
+.container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for login button */
+.container button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container button:hover {
+  background: #0056b3;
+}
+
+/* Style for the link */
+.container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.container p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container p a:hover {
+  text-decoration: underline;
+}
+/* Ensure the container takes full width */
+
+
+/* Style the background image */
+img {
+  object-fit: cover; /* Cover the entire area */
+  width: 100%;
+  height: 700px;
+}
+
+.form-container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Labels */
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Inputs & Textareas */
+.form-container input[type="text"],
+.form-container input[type="file"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Submit Button */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #e64a19;
+}
+
+.saved-recipes-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.saved-recipes-container h2 {
+  margin-bottom: 30px;
+  color: #fafafa;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.recipe-card {
+  height: 500px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  padding-top: 10px;
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.recipe-card p {
+  padding: 0 15px;
+  color: #666;
+  font-size: 14px;
+}
+
+.recipe-card button {
+  margin: 15px;
+  padding: 8px 16px;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.recipe-card button:hover {
+  background-color: #e64a19;
+}
+
+.ourrec{
+  padding-top: 50px;
+}
+
+.title {
+  margin-top: 30px;
+  color: #efeded;
+}
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.recipe-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding: 5px; ;
+}
+
+.recipe-card h3 {
+  margin: 15px 0 10px;
+  color: #444;
+}
+
+.recipe-card p {
+  padding: 0 15px;
+  color: #666;
+  font-size: 14px;
+}
+
+.save-btn {
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #ff4c4c;
+}
